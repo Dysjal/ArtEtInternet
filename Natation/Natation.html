@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html lang="fr">
+      <head>
+       <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+        <script src="./Natation.js"></script>
+
+        <title>Clickodrome</title>
+      </head>
+
+      	 <body onload="Creation()">
+
+           <!--Menu-->
+           <nav class="btn-pluss-wrapper">
+            <div href="#" class="btn-pluss">
+             <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="../page2.html">Nations</a></li>
+               <li><a href="../clickodrome.html">Clicodrome</a></li>
+               <li><a href="../podium.html">Podium</a></li>
+             </ul>
+            </div>
+           </nav>
+
+           <!--Fin Menu-->
+
+      	<div id = "menu">
+      	<button class="startbutton" onclick="Lancer();Timer();" >Go !</button>
+      	 <h1 class = "nbDeClick" id = "nbDeJeu">Number of Clics : </h1>
+          <h1 id="ancien"></h1>
+      </div>
+       <div id="Jeu">
+          <a> Time left : </a>
+          <a id = "timer_div"></a>
+          <a> seconds </a>
+      </div>
+      <div id = "Afficher">
+      		 <a>Score : </a>
+      		 <a id = "score"></a><br>
+      		   <div class="test">
+               <div class="testgauche"><button id ="gauche" onclick="clickGauche()">Left</button></div>
+      		     <div class="testdroite"><button id ="droite" onclick="clickDroit()">Right</button></div>
+             </div>
+
+       	</div>
+       <!--  -->
+    </body>
+    </html>

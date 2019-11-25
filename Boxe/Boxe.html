@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="fr">
+      <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css">
+        <script src="./Boxe.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+        <title>Clickodrome</title>
+      </head>
+
+
+      <body onload="Creation()">
+
+        <!--Menu-->
+            <nav class="btn-pluss-wrapper">
+             <div href="#" class="btn-pluss">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../page2.html">Nations</a></li>
+                <li><a href="../clickodrome.html">Clicodrome</a></li>
+                <li><a href="../podium.html">Podium</a></li>
+              </ul>
+             </div>
+            </nav>
+
+            <!--Fin Menu-->
+
+
+      	<div id = "menu">
+      	<button class="startbutton" onclick="Lancer();setTimeout(Timer, 3000);" >GO !</button>
+      	 <h1 class = "nbDeClick" id = "nbDeJeu">You've made: </h1>
+          <h2 id="ancien"></h2>
+      </div>
+      	 <div id="Jeu">
+          <a> Time Left : </a>
+          <h1 id = "timer_div"></h1>
+          <h2> s </h2>
+      </div>
+
+      	<div id = "Afficher">
+      		 <h1>Touched Targets : </h1>
+      		 <h2 id = "touche"></h2>
+           <img src="../imageIndex/aim.png" id = "rond"  onclick="Clicked()" width="90px" >
+
+       	</div>
+
+
+
+        </body>
+
+    </body>
+    </html>
